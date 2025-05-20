@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>siapapun bisa jadi apapun</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6dwnn</title>
   <style>
     body {
       background-color: black;
-      color: #00ff00;
+      color: green;
       font-family: monospace;
-      text-align: center;
-      margin-top: 40vh;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    .scrolling-text {
-      position: absolute;
-      width: 100%;
+    .wipe-text {
+      overflow: hidden;
       white-space: nowrap;
-      overflow: hidden;
-      animation: scroll-left 15s linear infinite;
+      border-right: 0.15em solid green;
+      animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+      font-size: 1.2rem;
     }
 
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
     }
   </style>
 </head>
 <body>
-  <div class="scroling-text">- siapapun bisa jadi apapun - edwnn7</div>
+  <div class="wipe-text">- Hilangkan kebiasaan buruk menceritakan orang lain. kita nggak tau ucapan mana yg akan kembali kepada kita. dunia itu berputar jadilah tinggi tanpa merendahkan orang lain
+ - 6dwnn</div>
 </body>
-</html>
 </html>
